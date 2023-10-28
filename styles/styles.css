@@ -88,6 +88,19 @@ img {
         font-weight: 600;
     }
     .header-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
         background: #A259FF;
+        height: 60px;
+        border: none;
+        border-radius: 20px;
+        padding: 0px 30px;
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.4;
     }
 }
