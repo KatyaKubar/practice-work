@@ -40,6 +40,11 @@ h1 {
     text-transform: capitalize;
     margin-bottom: 10px;
 }
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
 .container {
     max-width: 375px;
     padding-left: 30px;
@@ -72,21 +77,103 @@ h1 {
     padding-bottom: 40px;
 }
 .card {
-    border-radius: 0px 0px 20px 20px;
-    background: #3B3B3B;
-    Width: 100%;
+    width: 100%;
+    margin-top: 40px;
 }
-.card img {
+.hero-photo {
     position: relative;
     overflow: hidden;
-    background: #3B3B3B;
+    border-radius: 24px 24px 0 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-
+.card-list {
+    padding: 20px;
+    background: #3B3B3B;
+    border-radius: 0px 0px 20px 20px;
+}
+.card-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+.card-text img {
+    width: 24px;
+    height: 24px;
+}
+.hero-btn {
+    width: 315px;
+    display: flex;
+    height: 60px;
+    padding: 0px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    border-radius: 20px;
+    background: #A259FF;
+    color: #FFF;
+    text-align: center;
+    margin: 40px 0;
+    border: none;
+    
+}
+.hero-btn svg {
+  fill: #FFF;
+}
+.hero-list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+.hero-item span {
+    font-family: "Space Mono";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.6;
+    text-transform: capitalize;
+}
 @media screen and (min-width: 834px) {
     .container {
       max-width: 834px;
       padding-left: 72px;
       padding-right: 72px;
+    }
+    .hero {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    .tablet-style {
+       display: flex;
+       align-items: flex-start;
+       gap: 30px;
+    }
+    .card {
+        margin-top: 0;
+    }
+    .hero-photo {
+        height: 221px;
+    }
+    .tablet-style-text {
+        max-width: 330px;
+    }
+    h1 {
+        font-size: 38px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    .hero-btn {
+       width: 224px;
+       margin-top: -80px;
+       margin-bottom: 20px;
+   }
+   .hero-list {
+      justify-content: flex-start;
+    }
+    .hero-item {
+        width: 90px;
     }
 }
 @media screen and (min-width: 1280px) {
@@ -127,5 +214,38 @@ h1 {
         font-size: 16px;
         font-weight: 600;
         line-height: 1.4;
+    }
+    .tablet-style-text {
+       max-width: 510px;
+    }
+    h1 {
+      font-size: 67px;
+      line-height: 1.1;
+    }
+    .tablet-style p {
+        font-size: 22px;
+        line-height: 1.6;
+        text-transform: capitalize;
+    }
+    .hero-photo {
+      border-radius: 44px 44px 0 0;
+      height: 401px;
+    }
+    .hero-btn {
+       margin-top: -145px;
+       margin-bottom: 30px;
+    }
+    .hero-item {
+        width: 150px;
+    }
+    .hero-item span {
+      font-size: 28px;
+      line-height: 1.4;
+    }
+    .hero-item p {
+       font-size: 23.99px;
+       font-weight: 400;
+       line-height: 1.6;
+       text-transform: capitalize;
     }
 }
